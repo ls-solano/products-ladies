@@ -1,0 +1,237 @@
+    .bg-light{ /*color de fondo*/
+        background: #eaebe6 !important;
+    }
+    /*elimino algunos estilos por defecto en textos*/
+    h1,h1,h3,h4,h5,h6, a, p,span{ 
+        text-decoration: none;
+        padding:0; margin: 0;
+        color: #242424;
+    }
+
+/*------------------------------------------ 
+        ESTILOS DEL MENU
+------------------------------------------*/
+
+    /*modifico la propiedad para que se pueda alinear los textos a la derecha igual que a los li*/
+    #navbarSupportedContent ul{  
+        display: inline-block !important;
+    }
+    #navbarSupportedContent ul li{
+        display: inline-block !important;
+    }
+    #navbarSupportedContent ul li a{
+        transition: all 0.5s ease; /*animacion lenta*/
+    }
+    #navbarSupportedContent ul li a:hover{
+        color: #000; /*efecto al pasar el mouse sobre un elemento en el menu*/
+    }
+
+/*------------------------------------------ 
+        ESTILOS DEL BANNER INICIAL
+------------------------------------------*/
+     section.bannerinicial{
+         background: url(../img/banner.jpg); /*imagen de fondo*/
+         background-size: cover; /*tamaño o acomplación de la imagen al espacio*/
+         background-repeat: no-repeat; /*no se sepite*/
+         background-position: center center; /*posicion en el espacio*/
+         width: 100%; /*para que abarque el 100% de la pantalla*/
+         height: 90vh; /*90 de 100 que es el tamaño completo de la pantalla, 
+         está colocando en 90 ya que se el menu ocupa cierta cantidad*/
+         padding: 0 10%;
+     }
+
+     section.bannerinicial .info { /*contenedor de la información*/
+         width: 50%;  
+         text-align: end; /*coloco el texto a lado derecho para dejar libre la imagen*/
+     }
+     section.bannerinicial .info * { /*todos los elementos dentro de el padre info*/
+        padding-bottom: 10px;
+     }
+     section.bannerinicial .info p{
+         line-height: 30px;
+     }
+     section.bannerinicial .info .botones{
+         margin-top: 20px;
+     }
+     section.bannerinicial .info .botones a:first-child{ /*se aplica al primer elemento de tipo a*/
+         display: inline-block !important;
+         border-radius: 50px;
+         font-weight: bolder;
+         font-size: 12px;
+         padding:10px 30px;  
+         border: 2px solid #000;
+         margin-right: 20px;
+     }
+     section.bannerinicial .info .botones a:last-child{
+        padding-bottom: 2px; 
+        border-bottom: 1px solid #242424;
+     }
+/*------------------------------------------ 
+        ESTILOS DE LA INFORMACIÓN
+------------------------------------------*/
+
+     section.informacion hr{
+         margin: 10px auto;
+         padding: 2px;
+         text-align: center;
+         color: rgb(212, 181, 0);
+         width: 100px;
+
+     }
+/*------------------------------------------ 
+        ESTILOS DE LOS PRODUCTOS
+------------------------------------------*/
+     section.productos{
+         padding: 40px 0;
+     }
+     section.productos .producto{
+        width: 23%;
+        min-width: 130px;
+        margin-bottom: 40px;
+     }
+     section.productos .producto img{
+         width: 100%;
+         margin-bottom: 5px;
+     }
+     section.productos .producto .infocard .titulo{
+         font-size: 16px;
+         font-weight: bolder;
+     }
+     section.productos .producto .infocard .desproducto{
+         font-size: 12px;
+         margin-bottom: 10px;
+     }
+     section.productos .producto .infocard .precios{
+        display: flex;
+        flex-direction: row;
+     }
+
+     section.productos .producto .infocard .precios p:first-child{ /*aplica estilos al primer elemento de tipo p dentro de precios*/
+        background: rgb(242, 245, 58);
+        color: darkgoldenrod;
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 0;
+        padding: 0 10px;
+        margin-right: 10px;
+     }
+     section.productos .producto .infocard .precios p:last-child{
+         text-decoration:line-through;
+         /*estilo de forma tachada*/
+     }
+
+/*------------------------------------------ 
+        ESTILOS DEL FLYERS
+------------------------------------------*/
+    section.flyers{
+        width: 100%;
+        padding: 30px 0;
+    }
+    section.flyers div{
+        width: 50%; /*para que cada seccion ocupe la mitad del area destindaa flyers*/
+    }
+    
+    section.flyers div img{
+        width: 90%; /*para dejar bordes entre imagenes*/
+    }
+
+/*------------------------------------------ 
+        ESTILOS DE SECCION CONTACTO
+------------------------------------------*/
+    section.contact{
+        padding: 100px 0;
+        background: #f3f3f3;
+    }
+    section.contact div h3{
+        font-weight: bolder;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    section.contact div p{
+        margin: 40px 0;
+        color: #949393;
+    }
+    section.contact div .formulario{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    section.contact div .formulario form input{
+        font-size: 14px;
+        border: none;
+        padding: 10px 100px 10px 10px;
+        border:1px solid #a3a3a3;
+    }
+    section.contact div .formulario form button{
+        border:none;
+        background: #000;
+        color: #fff;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    section.contact div .redessociales span{
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    section.contact div small{
+        display: inline-block;
+        margin-top:20px;
+        color: #949393;
+    }
+
+
+
+    /* para el modificar las clases de bootstrap en movil */
+@media screen and (max-width:990px) {
+
+/*------------------------------------------ 
+        ESTILOS DEL MENU
+------------------------------------------*/
+
+    #navbarSupportedContent{  /*colocar texto centrado para mejor aspecto*/
+        text-align: center !important;
+    }
+    #navbarSupportedContent ul{ /*regreso los elementos a tipo bloque para acomodar bien en moviles*/
+        display: block !important;
+    }
+    #navbarSupportedContent ul li{
+        display: block !important;
+        padding-top: 30px; /*padding superior para mayor espacio entre items*/
+    }
+/*------------------------------------------ 
+        ESTILOS DEL BANNER
+------------------------------------------*/
+ 
+    section.bannerinicial .info {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    section.bannerinicial .info .botones{
+        margin-top: 0px;
+    }
+    section.bannerinicial .info .botones a:first-child{
+        display: block !important;
+        padding:10px 10px !important;  
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    section.contact div h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+/*------------------------------------------ 
+        ESTILOS DE FLYERS
+------------------------------------------*/
+ 
+    section.flyers div img, section.flyers img{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    section.flyers div{
+        width: 100%;
+    }
+}
