@@ -52,6 +52,12 @@
      }
      section.bannerinicial .info .botones{
          margin-top: 20px;
+
+     }
+     section.bannerinicial .info .botones a:hover{
+         text-decoration: none;
+         color: #242424;
+
      }
      section.bannerinicial .info .botones a:first-child{ /*se aplica al primer elemento de tipo a*/
          display: inline-block !important;
@@ -61,10 +67,20 @@
          padding:10px 30px;  
          border: 2px solid #000;
          margin-right: 20px;
+         transition: background 0.6s ease ;
      }
      section.bannerinicial .info .botones a:last-child{
         padding-bottom: 2px; 
         border-bottom: 1px solid #242424;
+        transition:  0.6s ease;
+     }
+     section.bannerinicial .info .botones a:first-child:hover{
+         background:#242424;
+         color: #fff;
+     }
+     section.bannerinicial .info .botones a:last-child:hover{
+        border-bottom: 2px solid #f3f3f3;
+        padding-left: 10px;
      }
 /*------------------------------------------ 
         ESTILOS DE LA INFORMACIÓN
@@ -85,7 +101,7 @@
          padding: 40px 0;
      }
      section.productos .producto{
-        width: 23%;
+        width: 24%;
         min-width: 130px;
         margin-bottom: 40px;
      }
